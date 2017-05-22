@@ -1,5 +1,60 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>Hello, world</h1>
-  </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="$ThemeDir/css/melby-css.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <style>
+
+    </style>
+    <title>Melby</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="section section-1">
+        <img src="$ThemeDir/img/test.jpg" class="section-background" alt="section1" />
+        <div class="section-1-desc">
+            <h2>TIME CLOCK SOLUTION FOR YOUR APPLICATION</h2>
+            <pre>ZKTeco's success is built upon loyalty and relationships. 
+We value every customer.</pre>
+            <a href=# class="btn-dark">See Our Product</a>
+        </div>
+
+        <img src="$ThemeDir/img/biometric.png" class="section-1-img" alt="time clock" />
+
+    </div>
+    <div class="section section-2">
+
+        <div class="section-2-item">
+            <img src="$ThemeDir/img/bio2.png" alt="biometric" />
+        </div>
+        <img src="$ThemeDir/img/hand.png" class="hand" />
+
+        <div class="section-2-desc">
+            <h2>Industry-changing Solutions and Growth to Biometric Industry</h2>
+            <pre>ZZK innovations created the world’s first multi-biometric device,
+standalone fingerprint access control, and biometric access 
+control panel. We are proud that these  industry-changing 
+products and solutions have defined the growth of the biometric 
+industry.</pre>
+            <a href=# class="btn-dark">About the Company</a>
+        </div>
+    </div>
+    <div class="section section-3">
+        <img src="$ThemeDir/img/section-3-bg.png" class="section-background" alt="section2" />
+    </div>
+    <script src="$ThemeDir/js/jquery-3.2.1.js"/>
+</body>
+
 </html>
