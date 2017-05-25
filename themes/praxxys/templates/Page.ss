@@ -8,8 +8,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="$ThemeDir/css/melby-css.css">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <style>
 
     </style>
@@ -17,15 +15,7 @@
 </head>
 
 <body class="no-padding-margin">
-    <nav class="navbar">
-        <ul>
-            <% loop $Menu(1) %>
-                <li>
-                    <a class="$LinkingMode" href="$Link">$MenuTitle</a>
-                </li>
-            <% end_loop %>
-        </ul>
-    </nav>
+    <% include NavBar %>
     <div class="section section-1">
         <img src="$ThemeDir/img/test.jpg" class="section-background" alt="section1" />
         <div class="section-1-desc no-padding-margin">
@@ -47,7 +37,7 @@ We value every customer.</pre>
 
         <div class="section-2-desc">
             <h2 class="thin-h2 no-padding-margin">Industry-changing Solutions and Growth to Biometric Industry</h2>
-            <p>$Content</p>
+            $Content
             <a href=# class="btn btn-dark">About the Company</a>
         </div>
     </div>
@@ -165,40 +155,8 @@ sensor, and exit button etc.</pre>
             </form>
         </div>
     </div>
-    <footer>
-        <div class="where">
-            <div class="company-details">
-                <img class="logo" src="$ThemeDir/img/logo.png" alt="zkteco"/>
-                <p>#Street Name, Barangay Name, Avenue, City Name, Manila, Philippines</p>
-                <img class="icon" src="$ThemeDir/img/call-icon.png"><p class="footer-phone">(+632) 123 456</p>
-                <img class="icon" src="$ThemeDir/img/email-icon.png"> <p class="footer-email">info@zkteco.ph</p>
-                <p>© Copyright 2017  ZK Techo Philipines.</p>
-                <p> All Rights Reserved</p>
-            </div>
-            <div class="footer-subsections">
-                <h4 class="no-padding-margin">Company</h4>
-                <ul>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Products</li>
-                </ul>
-            </div>
-            <div class="footer-subsections">
-                <h4 class="no-padding-margin">Fingerprint Device</h4>
-            </div>
-            <div class="footer-subsections">
-                <h4 class="no-padding-margin">Face Device</h4>
-            </div>
-            <div class="footer-subsections">
-                <h4 class="no-padding-margin">Multi-Biometric Device</h4>
-            </div>
-            $Form
-        </div>
-        <div class="copyright">
-            <p class="distributor"><span>Melby Pogi </span>is an official distributor of ZKTeco</p>
-        </div>
-    </footer>
-    <script src="$ThemeDir/js/jquery-3.2.1.js"></script>
+    <% include Footer %>
+   
 </body>
 
 </html>
