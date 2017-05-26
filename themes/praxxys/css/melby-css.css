@@ -67,7 +67,7 @@ ul {
     font-family: 'Abel', 'sans-serif';
     font-size: 3em;
 }
-.section-1-desc > pre {
+.section-1-desc > p {
     font-size:12pt;
     font-family:inherit;
     margin-bottom:2em;
@@ -254,7 +254,7 @@ ul {
     color:#568c2c;
 
 }
-.other-product-desc > pre {
+.other-product-desc > p {
     margin: .3em 0 1.5em;
     font-family:inherit;
     font-size:10pt;

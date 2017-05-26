@@ -17,37 +17,34 @@
 <body class="no-padding-margin">
     <% include NavBar %>
     <div class="section section-1">
-        <img src="$ThemeDir/img/test.jpg" class="section-background" alt="section1" />
+        <img src="$SectionOneBackground.URL" class="section-background" alt="section1" />
         <div class="section-1-desc no-padding-margin">
-            <h2 class="no-padding-margin">TIME CLOCK SOLUTION FOR YOUR APPLICATION</h2>
-            <pre>ZKTeco's success is built upon loyalty and relationships. 
-We value every customer.</pre>
+            <h2 class="no-padding-margin">$SectionOneHeader</h2>
+            <p>$SectionOneParagraph</p>
             <a href=# class="btn btn-dark">See Our Product</a>
         </div>
 
-        <img src="$ThemeDir/img/biometric.png" class="section-1-img" alt="time clock" />
+        <img src="$SectionOneImage.URL" class="section-1-img" alt="time clock" />
 
     </div>
     <div class="section section-2">
 
         <div class="section-2-item">
-            <img src="$ThemeDir/img/bio2.png" alt="biometric" />
+            <img src="$SectionTwoImage.URL" alt="biometric" />
         </div>
         <img src="$ThemeDir/img/hand.png" class="hand" />
 
         <div class="section-2-desc">
-            <h2 class="thin-h2 no-padding-margin">Industry-changing Solutions and Growth to Biometric Industry</h2>
-            $Content
+            <h2 class="thin-h2 no-padding-margin">$SectionTwoHeader</h2>
+            <p>$SectionTwoParagraph</p>
             <a href=# class="btn btn-dark">About the Company</a>
         </div>
     </div>
     <div class="section section-3">
         <img src="$ThemeDir/img/section-3-bg.png" class="section-background no-padding-margin" alt="section2" />
         <div class="section-3-desc">
-            <h2 class="thin-h2 no-padding-margin">Fully-Upgraded All in One Solution</h2>
-            <pre>ZKTeco continuously explores ways to improve our products and
-solutions to help businesses operate more efficiently and securely.
-            </pre>
+            <h2 class="thin-h2 no-padding-margin">$SectionThreeHeader</h2>
+            <p>$SectionThreeParagraph</p>
             <a href=# class="btn btn-dark">View All Products</a>
         </div>
         <div class="section-3-products">
@@ -69,40 +66,16 @@ sensor, and exit button etc.</pre>
 
     </div>
     <div class="other-products">
+        <% loop $Products.Limit(3) %>
         <div class="other-product">
-            <img src="$ThemeDir/img/vf780.png" alt="vf780"></img>
+            <img src="$Photo.URL" alt="vf780"></img>
             <div class="other-product-desc">
-                <h2 class="no-padding-margin">VF680</h2>
-                <pre>VF780 is a face identification time
-& attendance and access control
-terminal, which can connect with
-third party electric lock, door
-sensor, and exit button etc.</pre>
+                <h2 class="no-padding-margin">$Name</h2>
+                <p>$Description</p>
                 <a href=# class="btn btn-outline">View Item</a>
             </div>
         </div>
-        <div class="other-product middle-product">
-            <img src="$ThemeDir/img/vf780.png" alt="vf780"></img>
-            <div class="other-product-desc">
-                <h2 class="no-padding-margin">VF680</h2>
-                <pre>VF700 is a face identification T&A
-terminal with face, PIN and RFID
-recognition modes.</pre>
-                <a href=# class="btn btn-outline">View Item</a>
-            </div>
-        </div>
-        <div class="other-product">
-            <img src="$ThemeDir/img/vf780.png" alt="vf780"></img>
-            <div class="other-product-desc">
-                <h2 class="no-padding-margin">VF680</h2>
-                <pre>VF780 is a face identification time
-& attendance and access control
-terminal, which can connect with
-third party electric lock, door
-sensor, and exit button etc.</pre>
-                <a href=# class="btn btn-outline">View Item</a>
-            </div>
-        </div>
+        <% end_loop %>
     </div>
     <div class="section section-4">
         <h2 class="thin-h2 no-padding-margin">Most Reliable and Effective Product and Solutions</h2>
@@ -132,17 +105,16 @@ sensor, and exit button etc.</pre>
         </div>
         <div class="clients">
             <img class="left-button" src="$ThemeDir/img/left-button.png" alt="left" />
-            <img class="client" src="$ThemeDir/img/kfc.png"/>
-            <img class="client" src="$ThemeDir/img/nivea.png"/>
-            <img class="client" src="$ThemeDir/img/adidas.png"/>
-            <img class="client" src="$ThemeDir/img/mcdo.png"/>
+            <% loop $Clients %>
+                <img class="client" src="$Photo.URL"/>
+            <% end_loop %>
             <img class="right-button" src="$ThemeDir/img/right-button.png" alt="right" />
             
         </div>
 
     </div>
     <div class="contact">
-        <img class="section-background" src="$ThemeDir/img/map.png"/>
+        <img class="section-background" src="$Map.URL"/>
         <div class="contact-form">
             <form>
                 <h2 class="thin-h2 no-padding-margin">Inquire with Us</h2>
